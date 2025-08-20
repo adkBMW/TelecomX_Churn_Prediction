@@ -1,1 +1,48 @@
-//
+Predicción de Cancelación de Clientes
+Descripción
+
+Este proyecto tiene como objetivo analizar y predecir la cancelación de clientes (churn) utilizando técnicas de Machine Learning. Se exploran los datos, se preparan y normalizan, se crean modelos predictivos y se interpretan los resultados para identificar las variables más influyentes.
+
+Pasos del Proyecto
+
+Carga y exploración de datos: Revisión inicial de la información y tipos de variables.
+
+Eliminación de columnas irrelevantes: Se eliminan identificadores o columnas que no aportan valor predictivo.
+
+Encoding: Transformación de variables categóricas a formato numérico (One-Hot Encoding).
+
+Verificación de la proporción de cancelación: Se analiza el desbalance de clases.
+
+Balanceo de clases (opcional): Uso de técnicas como SMOTE para equilibrar clases.
+
+Análisis de correlación: Identificación de relaciones entre variables numéricas y la cancelación.
+
+Análisis dirigido: Exploración de relaciones específicas como “Tiempo de contrato vs Cancelación”.
+
+Separación de datos: División en conjuntos de entrenamiento y prueba (ej. 70/30).
+
+Creación de modelos: Entrenamiento de al menos dos modelos:
+
+Regresión Logística (requiere normalización)
+
+Random Forest (no requiere normalización)
+
+Evaluación de modelos: Uso de métricas como exactitud, precisión, recall, F1-score y matriz de confusión.
+
+Interpretación y conclusiones: Identificación de variables más relevantes según cada modelo y análisis de su impacto en la predicción.
+
+Resultados
+
+El modelo de Random Forest mostró mejor desempeño en comparación con Regresión Logística.
+
+Variables como tipo de Internet, método de pago y papelless billing resultaron altamente correlacionadas con la cancelación.
+
+Tecnologías utilizadas
+
+Python 3
+
+Pandas, NumPy
+
+Scikit-learn (Regresión Logística, Random Forest, SMOTE)
+
+Seaborn y Matplotlib (visualización)
